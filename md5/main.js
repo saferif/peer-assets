@@ -1,0 +1,1 @@
+console.log(require('./md5').hash(require('fs').readFileSync(process.argv[2])));

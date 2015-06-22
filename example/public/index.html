@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example Page</title>
+	<script type="text/javascript" src="http://localhost:3000/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="scripts/ajax.js"></script>
+	<script type="text/javascript" src="scripts/md5.js"></script>
+	<script type="text/javascript" src="scripts/RTCConnection.js"></script>
+	<script type="text/javascript" src="scripts/base64.js"></script>
+	<script type="text/javascript" src="scripts/fs.js"></script>
+	<script type="text/javascript" src="scripts/peer2.js"></script>
+	<link is="peer-link" rel="stylesheet" type="text/css" data-peer-href="styles/test.css" data-peer-hash="844ff10461743e04fadcf016b1846b9d"/>
+</head>
+<body>
+	<div><input type="checkbox" onclick="onCBClicked(this);" id="peerEnabled"/><label for="peerEnabled">Разрешить использование сети</label></div>
+	<div><img is="peer-img" data-peer-src="images/WebRTC.png" data-peer-hash="01a62f540508796941746bc708e93522"/></div>
+	<div><img is="peer-img" data-peer-src="images/Lenna.jpg" data-peer-hash="be661704d712db63f01834e0b62cc4f9"/></div>
+	<!--<div><audio src="audios/Tom's Dinner.mp3" controls data-peer-hash="ab6dd0c7a0ac41147bcdab46ef477a87"/></div>-->
+	<div><input type="button" value="Clear FS cache" onclick="clearFS();"/></div>
+
+	<script is="peer-script" data-peer-src="scripts/test.js" data-peer-hash="ef10821a3a8f9f1113bf07fa94cfd43d"></script>
+	<script type="text/javascript" src="scripts/test-utils.js"></script>
+</body>
+</html>
